@@ -1,35 +1,35 @@
 #include <iostream>
 using namespace std;
 
-class Book {
-    string title;
-    string author;
-    int price;
+class book {
+    int book_ID;
+    string book_title;
+    float book_price;
 
 public:
-    Book() {
-        title = "ABC";
-        author = "DEF";
-        price = 100;
+    book() {
+        book_ID = 0;
+        book_title = "oop";
+        book_price = 7.0;
     }
 
-    Book(string t, string a, int p) {
-        title = t;
-        author = a;
-        price = p;
+    book(int ID, string title, float price) {
+        book_ID = ID;
+        book_title = title;
+        book_price = price;
     }
 
     void display() {
-        cout << "Book Title: " << title << endl;
-        cout << "Author: " << author << endl;
-        cout << "Price: Rs. " << price << endl;
+        cout << "book ID - " << book_ID << endl;
+        cout << "book title - " << book_title << endl;
+        cout << "book price - " << book_price << endl;
     }
 };
 
 int main() {
-    Book b1;
+    book b1;
 
-    Book b2("OOP", "XYZ", 350);
+    book b2(786, "oop", 350.6);
 
     cout << "Book 1:" << endl;
     b1.display();
