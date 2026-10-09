@@ -24,7 +24,7 @@ class Employee:public person
     public:
     int EmpId;
     float Salary;
-    employee(string n,int a,int id,float s) : Person(n,a)
+    Employee(string n,int a,int id,float s) : Person(n,a)
     {
      EmpID=id;
      Salary=s;
